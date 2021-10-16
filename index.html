@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="groceries">
+            <h1 style="text-align: center">Shopping List</h1>
+
+            <hr>
+
+            <!-- BEGIN INPUT DIV -->
+            <div class="input-div" style="text-align: center;">
+                
+                <a onclick="addItem(document.getElementById(`input`).value)">&#128269</a>
+                <input id="input" onkeydown="if (event.keyCode == 13)
+                document.getElementById('input').click()" type="text" placeholder="Add items..." autofocus>
+
+            </div>
+            <!-- END INPUT DIV-->
+
+            <br>
+                
+            <div id="allItems">
+                <ul id="itemList">
+                </ul>
+            </div>
+        
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
